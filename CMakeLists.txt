@@ -11,5 +11,9 @@ endif()
 
 project ("Wing-Hunter")
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
 # Schließen Sie Unterprojekte ein.
 add_subdirectory ("Wing-Hunter")
