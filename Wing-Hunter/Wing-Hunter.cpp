@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "SDL.h"
+#include <SDL.h>
 #undef main
 
 using namespace std;
@@ -14,7 +14,7 @@ int main()
 	SDL_Window* window = SDL_CreateWindow("Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 600, SDL_WINDOW_SHOWN);
 	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
 
-	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+	SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
 	SDL_RenderClear(renderer);
 
 	SDL_RenderPresent(renderer);
