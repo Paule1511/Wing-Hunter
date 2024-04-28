@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	cout << "no" << endl;
-	renderEngine engine = renderEngine();
+	renderEngine graphicsEngine = renderEngine("TEST", 800, 600);
 	return 0;
+	//Todo
 }
