@@ -3,13 +3,9 @@
 #
 # Fügen Sie der ausführbaren Datei dieses Projekts eine Quelle hinzu.
 
-
-find_package(SDL2 REQUIRED PATHS "${CMAKE_SOURCE_DIR}/external/SDL2/cmake")
-include_directories(${SDL2_INCLUDE_DIRS})
-
 add_executable (Wing-Hunter "Wing-Hunter.cpp")
 
-target_link_libraries(Wing-Hunter ${SDL2_LIBRARIES})
+target_link_libraries(Wing-Hunter PRIVATE Wing-Utils)
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

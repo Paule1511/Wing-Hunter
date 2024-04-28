@@ -11,9 +11,18 @@ endif()
 
 project ("Wing-Hunter")
 
+
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
+include_directories("${CMAKE_SOURCE_DIR}/external/GLAD/include" "${CMAKE_SOURCE_DIR}/Wing-Utils/")
+
 # Schließen Sie Unterprojekte ein.
+add_subdirectory("external/glfw")
+add_subdirectory ("Wing-Utils")
 add_subdirectory ("Wing-Hunter")

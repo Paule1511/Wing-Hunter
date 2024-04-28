@@ -1,8 +1,13 @@
 /out
-/.vs/
-/.vscode/
+/.vs/*
+!/.vs/launch.vs.json
 /bin/
 /lib/
-/build/
-*pdb
 CMakeSettings.json
+CMakeFiles
+cmake_install.cmake
+*.ninja*
+CMakeCache.txt
+cmake_uninstall.cmake
+glfw.dir
+*.vcxproj*
