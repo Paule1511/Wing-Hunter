@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	renderEngine graphicsEngine = renderEngine("TEST", 800, 600);
+	renderEngine graphicsEngine = renderEngine("TEST", 800, 600);	//Kann vorerst ignoriert werden. falls nöttig auch auskommentiert werden
 	return 0;
 	//Todo
 }
