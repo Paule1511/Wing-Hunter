@@ -2,14 +2,17 @@
 //
 
 #include <iostream>
+
 #include "Wing-Utils.h"
+#include "Wing-Math.h"
 #undef main
 
 using namespace std;
 
 int main()
 {
-	renderEngine graphicsEngine = renderEngine("TEST", 800, 600);	//Kann vorerst ignoriert werden. falls nöttig auch auskommentiert werden
+	renderEngine graphicsEngine = renderEngine("TEST", 1000, 1000);	//Kann vorerst ignoriert werden. falls nöttig auch auskommentiert werden
+
 	return 0;
 	//Todo
 }
